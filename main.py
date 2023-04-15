@@ -191,7 +191,7 @@ class CountDown:
             # copy the path of mp3 file and paste to play the music
             if self.time_left <= 0:
                 process = multiprocessing.Process(target=playsound,
-                                                  args=("C:\\Users\\DELL\\OneDrive\\Desktop\\Ringtones\\nice_wake_up.mp3",))
+                                                  args=("\Ringtones\nice_wake_up.mp3",))
                 process.start()
                 messagebox.showinfo('Time Over', 'Press OK to stop playing')
                 process.terminate()
